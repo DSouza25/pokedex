@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+:root{
+    --verde: rgba(1, 212, 167, 0.4);
+    --vermelho: rgba(250, 0, 0, 0.4);
+    --azul: rgba(3, 35, 177, 0.5);
+    --preto: rgba(10, 10, 10, 0.4);
+    --pretao: rgba(10, 10, 10, 0.8);
+    --roxo: rgba(157, 3, 177, 0.4);
+    --rosa: rgba(201, 4, 79, 0.4);
+    --cinza: rgba(103, 0, 151, 0.4);
+    --azulzin: rgba(77, 154, 255, 0.4);
+    --amarelo: rgba(206, 192, 0, 0.4);
+    --marrom: rgba(102, 55, 2, 0.4);
+    --vermelhin: rgba(153, 25, 2, 0.4);
+
+
+    --sombra: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.xtrafondos.com/en/descargar.php?id=8254&resolucion=3840x2160");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+@media (max-width: 754px) {
+    body{
+        background-repeat: repeat;
+        overflow: auto;
+    }
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    height: 50px;
+    width: 400px;
+    margin: 20px auto 0px auto;
+}
+@media (max-width: 396px) {
+    form{
+        width: 80vw;
+    }
+}
+form > input{
+    border-radius: 20px;
+    border: none;
+    margin: 0px 3px;
+    height: 70%;
+}
+#fetchPokemon{
+    width: 70%;
+    text-align: center;
+}
+#fetchPokemon:focus{
+    box-shadow: inset 0px 0px 2px black;
+}
+#btnSearch{
+    width: 35px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/900/900930.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: var(--sombra);
+}
+#btnSearch:active{
+    box-shadow: inset 0px 0px 1px black;
+}
+#btnSearch:hover{
+    cursor: pointer;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#cardPokemon{
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+@media (max-width: 754px) {
+    #cardPokemon{
+        height: 350px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: var(--sombra);
+    }
+}
+#cardPokemon > h1{
+    color: whitesmoke;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'bebas neue';
+}
+#imgPokemon{
+    width: 80%;
+}
+@media (max-width: 754px) {
+    #imgPokemon{
+        width: 60%;
+    }
+}
+#informations{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    margin-left: 5px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#cardInformation{
+    width: 100%;
+    height: 49%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#cardInformation > p{
+    font-family: 'Roboto';
+    color: whitesmoke;
+    margin-left: 10px;
+    height: 15%;
+    font-size: 1.1rem;
+}
+#cardInformation > p > span{
+    color: whitesmoke;
+    font-family: 'bebas neue', sans-serif;
+    font-size: 1.8rem;
+}
+#cardAbilities{
+    width: 100%;
+    height: 49%;
+    border-radius: 15px;
+}
+#cardAbilities > h3{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.abilities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.abilities > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.abilities > ul > li{
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-family: 'bebas neue', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    padding: 3px;
+    list-style: none;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.background{
+    background-color: var(--azul);
+}

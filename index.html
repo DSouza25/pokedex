@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header >
+        <form action="" class="background">
+            <input type="search" name="fetchPokemon" id="fetchPokemon" placeholder="Digite o nome ou ID do pokémon" title="Digite o nome ou ID do pokémon" autocomplete="off">
+            <input type="submit" value="" id="btnSearch">
+        </form>
+    </header>
+    <main>
+        <div id="cardPokemon">
+            <h1><span id="idPokemon">ID</span> - <span id="namePokemon">Nome</span></h1>
+            <img src="imgs/pngwing.com.png" alt="imagem do pokemon selecionado" id="imgPokemon">
+        </div>
+        <div id="informations">
+            <div id="cardInformation" >
+                <p>Tipo: <span id="type"></span></p>
+                <p>Peso: <span id="weight"></span></p>
+                <p>Altura: <span id="height"></span></p>
+            </div>
+            <div id="cardAbilities">
+                <h3>Habilidades</h3>
+                <div class="abilities">
+                    <ul>
+                        <li id="ability1"></li>
+                        <li id="ability2"></li>
+                        <li id="ability3"></li>
+                        <li id="ability4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
